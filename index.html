@@ -20,58 +20,110 @@
 		<main>
 			<div class="calculator-container">
 				<div class="result-container">
-					<div class="result">Tu resultado...</div>
+					<div class="calculation"></div>
+					<div class="result">0</div>
 				</div>
 				<div class="buttons-container">
 					<div class="row">
-						<button class="btn">(</button>
-						<button class="btn">sin</button>
-						<button class="btn">1</button>
-						<button class="btn">4</button>
-						<button class="btn">7</button>
-						<button class="btn">.</button>
+						<button id="btn-(" class="btn" onclick="addOperator(id)">(</button>
+						<button id="btn-sin" class="btn" onclick="addOperator(id)">
+							sin
+						</button>
+						<button id="btn-1" class="btn" onclick="addNumber(id)">1</button>
+						<button id="btn-4" class="btn" onclick="addNumber(id)">4</button>
+						<button id="btn-7" class="btn" onclick="addNumber(id)">7</button>
+						<button id="btn-dot" class="btn" onclick="addOperator(id)">
+							.
+						</button>
 					</div>
 					<div class="row">
-						<button class="btn">)</button>
-						<button class="btn">cos</button>
-						<button class="btn">2</button>
-						<button class="btn">5</button>
-						<button class="btn">8</button>
-						<button class="btn">0</button>
+						<button id="btn-)" class="btn" onclick="addOperator(id)">)</button>
+						<button id="btn-cos" class="btn" onclick="addOperator(id)">
+							cos
+						</button>
+						<button id="btn-2" class="btn" onclick="addNumber(id)">2</button>
+						<button id="btn-5" class="btn" onclick="addNumber(id)">5</button>
+						<button id="btn-8" class="btn" onclick="addNumber(id)">8</button>
+						<button id="btn-0" class="btn" onclick="addNumber(id)">0</button>
 					</div>
 					<div class="row">
-						<button class="btn">x!</button>
-						<button class="btn">tg</button>
-						<button class="btn">3</button>
-						<button class="btn">6</button>
-						<button class="btn">9</button>
-						<button class="btn">π</button>
+						<button id="e" class="btn" onclick="addOperator(id)">e</button>
+						<button id="btn-tan" class="btn" onclick="addOperator(id)">
+							tan
+						</button>
+						<button id="btn-3" class="btn" onclick="addNumber(id)">3</button>
+						<button id="btn-6" class="btn" onclick="addNumber(id)">6</button>
+						<button id="btn-9" class="btn" onclick="addNumber(id)">9</button>
+						<button id="btn-PI" class="btn" onclick="addOperator(id)">π</button>
 					</div>
 					<div class="row">
-						<button class="btn">x<sup>2</sup></button>
-						<button class="btn">x<sup>3</sup></button>
-						<button class="btn">/</button>
-						<button class="btn">*</button>
-						<button class="btn">-</button>
-						<button class="btn">+</button>
+						<button id="btn-%" class="btn" onclick="addOperator(id)">%</button>
+
+						<button id="btn-in" class="btn" onclick="addOperator(id)">
+							In
+						</button>
+
+						<button id="btn-divide" class="btn" onclick="addOperator(id)">
+							/
+						</button>
+						<button id="btn-multiply" class="btn" onclick="addOperator(id)">
+							*
+						</button>
+						<button id="btn-minus" class="btn" onclick="addOperator(id)">
+							-
+						</button>
+						<button id="btn-plus" class="btn" onclick="addOperator(id)">
+							+
+						</button>
 					</div>
 					<div class="row">
-						<button class="btn">√</button>
-						<button class="btn">∛</button>
-						<button class="btn">%</button>
-						<button class="btn">log</button>
-						<button class="btn">AC</button>
-						<button class="btn">MR</button>
+						<button id="btn-x-2" class="btn" onclick="addOperator(id)">
+							x<sup>2</sup>
+						</button>
+						<button id="btn-x-3" class="btn" onclick="addOperator(id)">
+							x<sup>3</sup>
+						</button>
+						<button id="btn-x-n" class="btn" onclick="addOperator(id)">
+							x<sup>n</sup>
+						</button>
+						<button id="btn-square-root" class="btn" onclick="addOperator(id)">
+							√
+						</button>
+						<button
+							id="btn-square-root-3"
+							class="btn"
+							onclick="addOperator(id)"
+						>
+							<sup>3</sup>√
+						</button>
+						<button
+							id="btn-square-root-n"
+							class="btn"
+							onclick="addOperator(id)"
+						>
+							<sup>n</sup>√
+						</button>
 					</div>
 					<div class="row">
-						<button class="btn">√</button>
-						<button class="btn">x<sup>n</sup></button>
-						<button class="btn">In</button>
-						<button class="btn">e</button>
-						<button class="btn btn-double">=</button>
+						<button id="btn-delete" class="btn" onclick="addOperator(id)">
+							⌫
+						</button>
+
+						<button id="btn-log" class="btn" onclick="addOperator(id)">
+							log
+						</button>
+						<button id="btn-AC" class="btn" onclick="deleteAllOperations()">
+							AC
+						</button>
+						<button id="btn-MR" class="btn" onclick="getMemory(id)">MR</button>
+
+						<button id="btn-equal" class="btn btn-double" onclick="getResult()">
+							=
+						</button>
 					</div>
 				</div>
 			</div>
 		</main>
+		<script src="script.js"></script>
 	</body>
 </html>

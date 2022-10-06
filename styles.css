@@ -76,6 +76,7 @@ main::before {
 
 .result-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
@@ -84,15 +85,31 @@ main::before {
     background-color: #0d1a28;
 }
 
+.calculation{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 100;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #9fa4a9;
+        overflow: hidden;
+}
+
 .result{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding: 10px;
     width: 400px;
-    height: 100px;
+    height: 50px;
     text-align: center;
-    font-size: 28px;
-    font-weight: 100;
+    font-size: 32px;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #9fa4a9;
 }
@@ -172,7 +189,7 @@ main::before {
 @media (max-width: 768px) {
 
     .logo-container{
-        top: 25px;
+        top: 15px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -190,20 +207,27 @@ main::before {
         max-width: 350px;
     }
 
+    .calculation {
+        width: 80%;
+        max-width: 400px;
+        font-size: 18px;
+
+    }
+
     .result {
         width: 80%;
         max-width: 400px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .btn {
-        width: 30px;
-        height: 25px;
+        width: 40px;
+        height: 35px;
         font-size: 12px;
     }
 
     .btn-double{
-        width: 30px;
-        height: 60px;
+        width: 40px;
+        height: 80px;
     }
 }

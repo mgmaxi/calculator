@@ -2,11 +2,11 @@ Project for Codo a Codo React course.
 
 ## 📖 <b> Project Description and Requirements</b>
 
-- [Tasks](https://github.com/mgmaxi/calculator/blob/main/docs/tasks.pdf)
+- [Tasks](https://github.com/mgmaxi/calculator/blob/main/src/docs/tasks.pdf)
 
 ## 🛠️ <b> Technologies</b>
 
-Built with HTML and CSS.
+Built with HTML, CSS, JavaScript and React.
 
 ## 🚀 <b> Deploy</b>
 

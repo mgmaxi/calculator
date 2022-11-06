@@ -54,7 +54,7 @@ main {
 
 main::before {    
     content: "";
-    background-image: url(assets/bg-image.jpg);
+    background-image: url(../../assets/bg-image.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
